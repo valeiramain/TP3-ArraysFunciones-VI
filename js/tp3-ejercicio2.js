@@ -27,23 +27,30 @@ if (ciudades.length > 0) {
     )
     // Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
     document.writeln(`<ul>`)
-    document.writeln(`<li>Elemento en 1era posición: ${ciudades[0]}</li>`)
-    document.writeln(`<li>Elemento en 3era posición: ${ciudades[2]}</li>`)
-    document.writeln(`<li>Elemento en última posición: ${ciudades[ciudades.length - 1]}</li>`)
+    document.writeln(`<li>Elemento en 1era posición es: ${ciudades[0]}</li>`)
+    document.writeln(`<li>Elemento en 3era posición es: ${ciudades[2]}</li>`)
+    document.writeln(`<li>Elemento en última posición es: ${ciudades[ciudades.length - 1]}</li>`)
 
     // Añade en última posición la ciudad de París.
     ciudades.push('París')
     document.writeln('<br>')
-    document.writeln(`<li>Nuevo Elemento en la última posición: ${ciudades[ciudades.length - 1]}</li>`)
+    document.writeln(`<li>Nuevo Elemento en la última posición es: ${ciudades[ciudades.length - 1]}</li>`)
     document.writeln(`</ul>`)
 
     // Escribe por pantalla el elemento que ocupa la segunda posición.
     alert(`El elemento que ocupa la 2da posición es: ${ciudades[1]}`)
 
+    document.writeln(`<br><h3>Arreglo de Ciudades</h3>`)
+    document.writeln(`<ul>`)
+    for (i = 0; i < ciudades.length; i++) {
+        document.writeln(`<li>${ciudades[i]}</li>`)
+    }
+    document.writeln(`</ul>`)
+
     // Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
     ciudades[1] = "Barcelona"
 
-    document.writeln(`<br><h3>Arreglo de Ciudades</h3>`)
+    document.writeln(`<br><h3>Arreglo de Ciudades reemplazando 2da posición por BARCELONA</h3>`)
     document.writeln(`<ul>`)
     for (i = 0; i < ciudades.length; i++) {
         document.writeln(`<li>${ciudades[i]}</li>`)

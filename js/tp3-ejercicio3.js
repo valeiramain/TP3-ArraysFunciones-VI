@@ -3,20 +3,48 @@
 // Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.
 
 
+
 function numeroAleatorio() {
-    return Math.floor(Math.random( (6) + 1));
+    return Math.floor(Math.random() * 6 + 1);
 }
 
-// const apariciones = [0,0,2,3,4,5,6,7,8,9,10,11,12]
-const apariciones = [0,0,0,0,0,0,0,0,0,0,0,0,0]
+const apariciones = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 0; i < 50; i++) {
+    console.log('tironro: ' + i)
     const dado1 = numeroAleatorio();
     const dado2 = numeroAleatorio();
     const suma = dado1 + dado2
-    console.log('i: '+i)
-    console.log("dado1: " + dado1 + "  dado2: " + dado2)
-    console.log("suma =" + suma)
+    console.log("dado1:" + dado1 + "dado2:" + dado2)
+    console.log("suma" + suma)
     apariciones[suma] = apariciones[suma] + 1
     console.log(apariciones)
 }
+
+
+//mostrar tabla
+
+document.writeln(
+    `<table>
+        <thead>
+            <tr>
+                <th>Suma 🎲🎲</th>
+                <th>Apariciones</th>
+            </tr>
+        </thead>
+        <tbody>`);
+
+
+for (let i = 2; i <= 12; i++) {
+    document.writeln(`<tr>`)
+    document.writeln(`<td>${i}</td>`)
+    document.writeln(`<td>${apariciones[i]}</td>`)
+    document.writeln(`</tr>`)
+}
+
+document.writeln(`
+        </tbody>
+    </table>`)
+
+
+

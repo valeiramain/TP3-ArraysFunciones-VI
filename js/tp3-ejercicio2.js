@@ -9,6 +9,20 @@
 
 const ciudades = []
 let ciudad = ""
+
+//==============================
+// FUNCIONES
+//==============================
+const mostrarArray = (titulo) => {
+    document.writeln(`<h3>${titulo}</h3>`)
+    document.writeln(`<ul>`)
+    for (i = 0; i < ciudades.length; i++) {
+        document.writeln(`<li>${ciudades[i]}</li>`)
+    }
+    document.writeln(`</ul>`)
+}
+//================================
+
 do {
     ciudad = prompt("Ingrese el nombre de una Ciudad: ")
     console.log('ciudad ingresada: ' + ciudad)
@@ -33,27 +47,17 @@ if (ciudades.length > 0) {
 
     // Añade en última posición la ciudad de París.
     ciudades.push('París')
-    document.writeln('<br>')
     document.writeln(`<li>Nuevo Elemento en la última posición es: ${ciudades[ciudades.length - 1]}</li>`)
     document.writeln(`</ul>`)
 
     // Escribe por pantalla el elemento que ocupa la segunda posición.
     alert(`El elemento que ocupa la 2da posición es: ${ciudades[1]}`)
-
-    document.writeln(`<br><h3>Arreglo de Ciudades</h3>`)
-    document.writeln(`<ul>`)
-    for (i = 0; i < ciudades.length; i++) {
-        document.writeln(`<li>${ciudades[i]}</li>`)
-    }
-    document.writeln(`</ul>`)
+    document.writeln(`<br>`)
+    mostrarArray(`Arreglo de Ciudades:`)
 
     // Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
     ciudades[1] = "Barcelona"
-
-    document.writeln(`<br><h3>Arreglo de Ciudades reemplazando 2da posición por BARCELONA</h3>`)
-    document.writeln(`<ul>`)
-    for (i = 0; i < ciudades.length; i++) {
-        document.writeln(`<li>${ciudades[i]}</li>`)
-    }
-    document.writeln(`</ul>`)
+    mostrarArray(`Arreglo de Ciudades reemplazando 2da posición por BARCELONA:`)
+} else {
+    document.writeln('No hay ciudades para mostrar')
 }

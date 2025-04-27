@@ -31,6 +31,7 @@ _(mostrar los 12 meses en una lista)_
 **Ejemplo:**
 
 **Input:**
+
 ```javascript
 ['Nueva York, Estados Unidos', 'Barcelona, España', 'Tokio, Japón', 'Londres, Reino Unido', 'Roma, Italia', 'Pekín, China', 'Río de Janeiro, Brasil', 'Ámsterdam, Países Bajos', 'Sídney, Australia', 'El Cairo, Egipto']
 ```
@@ -46,6 +47,7 @@ El arreglo tiene X elementos
 - Elemento en última posición es: PARIS
 
 ### ARREGLO DE CIUDADES
+
 mostrar cada elemento del array en forma de lista anteponiendo la palabra "Elemento:"
 
 ---
@@ -72,6 +74,7 @@ En una tabla de 2 columnas mostrar en una columna el resultado de la suma de los
 | 10        | 3          |
 | 11        | 6          |
 | 12        | 2          |
+
 ---
 
 ## Funciones
@@ -100,28 +103,21 @@ Crear una función para calcular su **perímetro** y mostrarlo por pantalla.
 
 La fórmula del perímetro es:
 
-```
-p = 2 * (a + b)
-```
+> p = 2 * (a + b)
 
 **Ejemplo:**
 
 **Input:**
-```
-lado A = 24
-lado B = 5
-```
+
+> lado A = 24   
+> lado B = 5
 
 **Output:**
-```
-58
-```
 
+> 58
 ---
 
 ### Dificultad: 🟢🟡
 
 **7.** Escribir un script que muestre la **tabla de multiplicar** de un número ingresado por el usuario.  
 La tabla debe ser generada con una función y mostrar los resultados del 1 al 10 del número elegido.
-
----
